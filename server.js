@@ -28,6 +28,22 @@ app.get('/add_user', function(req, res) {
     res.end("User added");
 })
 
+app.get('/profile', function(req, res) {
+    const firstName = "Duszek"; // Replace with your actual first name
+    const lastName = "Kacper";   // Replace with your actual last name
+    res.send(`
+        <!DOCTYPE html>
+        <html>
+        <body>
+            <h1>My profile:</h1>
+            <p>First Name: ${firstName}</p>
+            <p>Last Name: ${lastName}</p>
+        </body>
+        </html>
+    `);
+});
+
+
 const listener = app.listen(8080, 
 	() => console.log(`Listening on ${ listener.address().port }`));
 
