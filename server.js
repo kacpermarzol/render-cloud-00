@@ -4,6 +4,10 @@ var users = require("./userDatabase");
 
 var app = express();
 
+const PORT = process.env.PORT || 8080;
+app.listen(PORT);
+
+
 // var parser = bodyParser.urlencoded();
 var parser = bodyParser.json();
 
