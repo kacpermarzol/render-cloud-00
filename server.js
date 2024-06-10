@@ -29,8 +29,8 @@ app.get('/add_user', function(req, res) {
 })
 
 app.get('/profile', function(req, res) {
-    const firstName = "Duszek"; // Replace with your actual first name
-    const lastName = "Kacper";   // Replace with your actual last name
+    const firstName = "Duszek";
+    const lastName = "Kacper";  
     res.send(`
         <!DOCTYPE html>
         <html>
